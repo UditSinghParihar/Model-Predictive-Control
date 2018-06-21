@@ -9,6 +9,6 @@ Position limits(m): 1<x<30 and 1<y<30
 Velocity limits(m/s): 1<ux<10 and 1<uy<10
 
 Objective function:  
-Minimize((x_target - x[final])^2 + (y_target - y[final]^2) + sum_square(vel[t] - vel[t+1]))    
-![alt text](https://raw.githubusercontent.com/UditSinghParihar/Model-Predictive-Control/master/path_and_velocity_profile.png)
+Minimize((x_target - x[final])^2 + (y_target - y[final]^2) + sum_square(vel[t] - vel[t+1]))  
+
 
