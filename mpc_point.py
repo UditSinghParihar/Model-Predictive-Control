@@ -55,7 +55,7 @@ def main():
 
     plt.figure(1)
     plt.subplot(211)
-    plt.plot(x.value, y.value, 'ro')
+    plt.plot(x.value, y.value, 'ro', x0, y0, 'go', x_target, y_target, 'go')
     plt.xlabel('x coordinate')
     plt.ylabel('y coordinate')
 
@@ -64,7 +64,7 @@ def main():
                          for vx, vy in zip(ux.value, uy.value)])
     time = np.linspace(0.1, 5, 49)
     print 'velocity:', velocity
-    plt.plot(time, velocity, 'bo')
+    plt.plot(time, velocity, 'bo', time[0], np.sqrt(ux0**2 + uy0**2), 'go')
     plt.xlabel('Time')
     plt.ylabel('Velocity')
     plt.show()
